@@ -478,99 +478,99 @@ footer .copyright {
 }
 /* ------------------------------------- */
 /* MediaQ */
-@media (max-width:820px){
-    #navbar { /* creates a nav bar to go to the side */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        height: 100vh;
-        width: 300px;
-        background-color: white;
-        box-shadow: 0 10px 10px grey;
-        padding: 80px 0 0 10px;
-        transition: 0.3s;
+@media (max-width:820px) {
+  #navbar { /* creates a nav bar to go to the side */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 10px 10px grey;
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
     }
-    #navbar li { /* creates space between the links */
-        margin-bottom: 25px;
-    }
-
-    #navbar.active{
-        right: 0px;
+  #navbar li { /* creates space between the links */
+    margin-bottom: 25px;
     }
 
-    #mobile{
-        display: flex;
-        align-items: center;
+  #navbar.active{
+    right: 0px;
     }
-    #mobile i{
-        color: #1a1a1a;
-        font-size: 24px;
-        padding-left: 20px;
+
+  #mobile{
+    display: flex;
+    align-items: center;
     }
-    #close {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: black;
-        font-size: 24px;
-        display: initial; /* shows the close button when inside a query */
+  #mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
     }
-    #lg-bag {
-        display: none;
+  #close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: black;
+    font-size: 24px;
+    display: initial; /* shows the close button when inside a query */
     }
-    #hero {
-        height: 70vh;
-        padding: 0 80px;
+  #lg-bag {
+    display: none;
     }
-    .product-card { /* changes the width of each card and its smaller */
-        width: 200px;
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    }
+  .product-card { /* changes the width of each card and its smaller */
+    width: 200px;
     }
 }
 @media (max-width: 477px){
     /* home page */
-    #navbar { /* changes how much space is in the slider for navbar */
-        width: 200px;
+  #navbar { /* changes how much space is in the slider for navbar */
+    width: 200px;
     }
-    #header {
-        padding: 10px 30px; /* creates space in the navbar */
+  #header {
+    padding: 10px 30px; /* creates space in the navbar */
     }
-    #hero {
-        padding: 0; /* allows the information in the hero to be centered */
+  #hero {
+    padding: 0; /* allows the information in the hero to be centered */
     }
-    #subscribe{
-        height: 14vh;
-        justify-content: space-around;/* shifts the subscribe infor in the middle */
+  #subscribe{
+    height: 14vh;
+    justify-content: space-around;/* shifts the subscribe infor in the middle */
     }
-    .form{
-        width: 60%;
+  .form{
+    width: 60%;
     }
-    #subscribe input {
-        width: 12rem;
+  #subscribe input {
+    width: 12rem;
     }
     /*slider*/
-    .product-category{
-        padding: 0 16vw;
+  .product-category{
+    padding: 0 16vw;
     }
-    .pre-btn,
-    .nxt-btn{
-        width: 70px;
+  .pre-btn,
+  .nxt-btn{
+    width: 70px;
     }
-    .pre-btn img,
-    .nxt-btn img{
-        width: 70px;
+  .pre-btn img,
+  .nxt-btn img{
+    width: 70px;
     }
-    .product-container{
-        padding: 0 14vw;
+  .product-container{
+    padding: 0 14vw;
     }
-    .product-card{
-        margin-right: 10px;
+  .product-card{
+    margin-right: 10px;
     }
     /* Contact */
-    .contact-box{
-        width: 300px;
+  .contact-box{
+    width: 300px;
     }
 }
