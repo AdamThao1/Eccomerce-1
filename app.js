@@ -6,8 +6,8 @@ const preBtn = document.querySelectorAll('.pre-btn');
 //line 2 selects all the elements in the product container and stores them in the variable
 //line 3-4 selects the elements in the nxt/pre button and stores them in their own vairable
 productContainers.forEach(function(item, i) { //loops through each product container with this function
-  let containerDimensions = item.getBoundingClientRect(); //this would get the dimensions
-  let containerWidth = containerDimensions.width; //this would get the width
+  const containerDimensions = item.getBoundingClientRect(); //this would get the dimensions
+  const containerWidth = containerDimensions.width; //this would get the width
 
   nxtBtn[i].addEventListener('click', function() { //event listeners for the click on the button
     item.scrollLeft += containerWidth; //when button is clicked it would scroll button to the right
@@ -42,11 +42,11 @@ http.open('get', 'image.json', true);
 http.send();
 
 http.onload = function(){
-    if(this.readyState == 4 && this.status == 200){
-  const products = JSON.parse(this.responseText);
+  if(this.readyState == 4 && this.status == 200){
+    const products = JSON.parse(this.responseText);
     let output = "";
-    for(let item of products){
-        output += `
+    for(const item of products){
+      output += `
       <div class="product">
                     <img src="${item.image}" alt="${item.image}">
                     <p class="title">${item.title}</p>
@@ -57,7 +57,7 @@ http.onload = function(){
                     <p href="#" class="Shop">Add to cart</p>
                 </div>
             `;
-        }
-    document.querySelector(".products").innerHTML = output;
     }
+    document.querySelector(".products").innerHTML = output;
   }
+}
