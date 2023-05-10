@@ -7,13 +7,13 @@
 
 /* header start */
 #header {
-  display: flex; /* changes the links*/
+  display: flex; /* changes the links */
   align-items: center;
-  justify-content: space-between; /*put the links to the right side*/
+  justify-content: space-between; /* put the links to the right side */
   padding: 20px 80px;
-  background: #FFD55E; 
+  background: #ffd55e;
   box-shadow: 0 5px 10px rgba(128, 128, 128, 0.234);
-/*next four lines would keep the nav bar on top always*/
+  /* next four lines would keep the nav bar on top always */
   z-index: 999;
   position: sticky;
   top: 0;
@@ -21,45 +21,45 @@
 }
 
 #navbar {
-  display: flex; /*changed the links to go horizontal instead of veritcle*/
+  display: flex; /* changed the links to go horizontal instead of veritcle */
   align-items: center;
   justify-content: center;
 }
 #navbar li {
-  list-style: none; /*removes the dots for the list*/
+  list-style: none; /* removes the dots for the list */
   padding: 0 20px;
   position: relative;
 }
 #navbar li a {
-  text-decoration: none; /*removes the underline*/
+  text-decoration: none; /* removes the underline */
   font-size: 16px;
-  font-weight: 600; /*changes the thickness*/
-  color: gray; /*change the color of links to black*/
-  transition: 0.3s ease; /* when hovering the links, a short transition ahppens*/
+  font-weight: 600; /* changes the thickness */
+  color: gray; /* change the color of links to black */
+  transition: 0.3s ease; /* when hovering the links, a short transition ahppens */
 }
 #navbar li a:hover,
 #navbar li a.active {
   color: black;
 }
 
-/*the line under the links*/
+/* the line under the links */
 #navbar li a.active::after,
-#navbar li a:hover::after { /*creating this would give the hover for other links*/
+#navbar li a:hover::after { /* reating this would give the hover for other links */
   content: "";
-  width: 30%; /*gives the line the width*/
+  width: 30%; /* gives the line the width */
   background: black;
   height: 2px; 
-  bottom: -4px; /* moves the underline below the link*/
-  left: 20px; /*moves the underline left to right deoending on px*/
+  bottom: -4px; /* moves the underline below the link */
+  left: 20px; /* moves the underline left to right deoending on px */
   position: absolute;
 }
 
-#mobile{ /*this is for the responsive icons to disappear*/
+#mobile{ /* this is for the responsive icons to disappear */
   display: none;
   align-items: center;
 }
 
-#close { /*have the x mark*/
+#close { /* have the x mark */
   display: none;
 }
 
@@ -72,7 +72,7 @@ border-radius: 50%;
 }
 
 
-/*home Page*/
+/* home Page */
 #hero {
   background-image: url("../images/backgrounds/manholeMinion.jpg");
   height: 100vh;
@@ -81,7 +81,7 @@ border-radius: 50%;
   background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /*changes the length of the words*/
+  align-items: center; /* changes the length of the words */
 }
 
 #hero h2{
@@ -94,45 +94,45 @@ border-radius: 50%;
   padding: 0 0 10px 0;
 }
 
-/*button on home page*/
+/* button on home page */
 .Shop {
   margin: 10px;
-  padding: 15px 30px; /*changes the size of button*/
+  padding: 15px 30px; /* changes the size of button */
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200%;
-  color: white; /*text color*/
-  border-radius: 10px; /*changes the corners of button*/
+  color: white; /* text color */
+  border-radius: 10px; /* changes the corners of button */
   display: block;
   border: 1px;
   font-weight: 900;
-  box-shadow: 0px 0px 14px -5px #FFD55E;/*creates a shadow around the button*/
-  background-image: linear-gradient(45deg, orange 0%, #FFD55E 51%,orange 100%); /*have it to go to 45 degrees and have 3 different colors considering their position*/
+  box-shadow: 0px 0px 14px -5px #FFD55E;/* creates a shadow around the button */
+  background-image: linear-gradient(45deg, orange 0%, #FFD55E 51%,orange 100%); /* have it to go to 45 degrees and have 3 different colors considering their position */
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation; /*Enables zoom interactions*/
+  touch-action: manipulation; /* Enables zoom interactions */
 }
 .Shop:hover{
-  background-position: right center;/*changes the direction*/
+  background-position: right center;/* changes the direction */
   color: #fff;
   text-decoration: none;
 }
 .Shop:active{
-  transform: scale(0.95); /*changes the size when clicked*/
+  transform: scale(0.95); /* changes the size when clicked */
 }
 
-/*slider*/
+/* slider */
 
-#slider{ /*creates space around the section*/
+#slider{ /* creates space around the section */
   position: relative;
   overflow: hidden;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(128, 128, 128, 0.417);
 }
 
-.product-category{ /*Best selling*/
+.product-category{ /* Best selling */
   padding: 0 10vw;
   font-size: 30px;
   font-weight: 500;
@@ -140,7 +140,7 @@ border-radius: 50%;
   text-transform: capitalize;
 }
 
-.product-container{ /*the container for the cards*/
+.product-container{ /* the container for the cards */
   padding: 0 10vw;
   display: flex;
   overflow-x: auto;
@@ -148,15 +148,15 @@ border-radius: 50%;
 }
 
 .product-container::-webkit-scrollbar {
-  display: none; /*this is the scroll bar that scrolls through the containers*/
+  display: none; /* this is the scroll bar that scrolls through the containers */
 
 }
 
 .product-card{
-  flex: 0 0 auto; /*gave a flex box to give images their size*/
+  flex: 0 0 auto; /* gave a flex box to give images their size */
   width: 250px;
   height: 450px;
-  margin-right: 40px; /*adds space between cards*/
+  margin-right: 40px; /* adds space between cards */
 }
 
 .product-image{
@@ -167,7 +167,7 @@ border-radius: 50%;
 }
 
 
-.product-pic{ /*this is the picture inside the card*/
+.product-pic{ /* this is the picture inside the card */
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -185,15 +185,15 @@ border-radius: 50%;
   text-transform: capitalize;
 }
 
-.card-btn {  /*add to wishlist button*/
+.card-btn {  /* add to wishlist button */
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%); /*merges to the left*/
-  padding: 10px; /*adds space to the button*/
-  width: 90%; /*makes sure that this doesn't fill the card from left to right*/
+  transform: translateX(-50%); /* merges to the left */
+  padding: 10px; /* adds space to the button */
+  width: 90%; /* makes sure that this doesn't fill the card from left to right */
   text-transform: capitalize;
-  border: none; /*this line and the next one deletes the lines from the button*/
+  border: none; /* this line and the next one deletes the lines from the button */
   outline: none;
   background-color: grey;
   border-radius: 5px;
@@ -203,44 +203,44 @@ border-radius: 50%;
 }
 
 .product-card:hover .card-btn {
-  opacity: 1; /*when hovering the card, the button "add to wishlist" appears*/
+  opacity: 1; /* when hovering the card, the button "add to wishlist" appears */
 }
 
-.card-btn:hover { /*when hovering over the button, it changes color*/
+.card-btn:hover { /* when hovering over the button, it changes color */
   background: black;
   color: #FFD55E;
 }
 
-.product-info { /*the name, description, and price adjustments*/
+.product-info { /* the name, description, and price adjustments */
   width: 100%;
   height: 100px;
   padding-top: 10px;
-  padding-left: 15px;/*gives space to the left, which shifts the texts to the right*/
+  padding-left: 15px;/* gives space to the left, which shifts the texts to the right */
   border: 1px solid black;
 }
-.product-brand { /*the title of each character*/
+.product-brand { /* the title of each character */
   text-transform: uppercase;
 }
 
-.product-description { /*the description of each character*/
+.product-description { /* the description of each character */
   width: 100%;
   height: 20px;
   line-height: 20px;
   overflow: hidden;
-  opacity: 0.5; /*gives the grey color for the text */
+  opacity: 0.5; /* gives the grey color for the text */
   text-transform: capitalize;
   margin: 5px 0;
 }
 
-.price{ /*the price after the discount*/
+.price{ /* the price after the discount */
   font-weight: 900;
   font-size: 20px;
 }
 
-.ac  ual-price{ /*the actual price for the character*/
+.ac  ual-price{ /* the actual price for the character */
   margin-left: 20px;
   opacity: 0.5;
-  text-decoration: line-through; /*gives the line through the text*/
+  text-decoration: line-through; /* gives the line through the text */
 }
 
 
@@ -269,19 +269,19 @@ border-radius: 50%;
 }
 
 .pre-btn img,
-.nxt-btn img{ /* changes the color and size of button images*/
+.nxt-btn img{ /* changes the color and size of button images */
   opacity: 0.4;
   height: 100px;
   width: 100px;
 }
 
 .pre-btn:hover img,
-.nxt-btn:hover img{ /*when hovering the button, the button appears with color and has a transition*/
+.nxt-btn:hover img{ /* when hovering the button, the button appears with color and has a transition */
   opacity: 1;
   transition: 0.4s;
 }
 
-/*Subscribe*/
+/* Subscribe */
 
 #subscribe {
   display: flex;
@@ -314,7 +314,7 @@ border-radius: 50%;
   border-radius: 4px;
   background-color: #6F8FAF;
   color: white;
-  white-space: nowrap; /*makes "sign up" into one line*/
+  white-space: nowrap; /* makes "sign up" into one line */
 }
 .form{
   display: flex;
@@ -322,60 +322,60 @@ border-radius: 50%;
   margin-right: 4vw;
 }
 
-/*footer*/
+/* footer */
 
-footer { /*gives the footer flexbox and space-between*/
+footer { /* gives the footer flexbox and space-between */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #FFD55E;
   padding: 10px;
 }
-footer .col { /*the column in the footer*/
+footer .col { /* the column in the footer */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 30px;
 }
-footer h4 { /*changing the titles of each footer titles*/
+footer h4 { /* changing the titles of each footer titles */
   font-size: 20px;
   padding-bottom: 20px;
 }
-footer p { /*gives space between each information*/
+footer p { /* gives space between each information */
   font-size: 16px;
   margin: 0 0 8px 0;
 }
-footer a { /* gives space and changes the links*/
+footer a { /* gives space and changes the links */
   font-size: 16px;
   text-decoration: none;
   color: black;
-  margin-bottom: 10px; /*gives space between each link*/
+  margin-bottom: 10px; /* gives space between each link */
 }
-footer .follow{ /*gives space above to seperate from the contact*/
+footer .follow{ /* gives space above to seperate from the contact */
   margin-top: 20px;
 }
-footer .follow a{ /*social media links*/
+footer .follow a{ /* social media links */
   color: grey;
-  padding-right: 8px; /*gives space between each links*/
+  padding-right: 8px; /* gives space between each links */
   cursor: pointer;
   font-size: 22px;
 }
-footer .install .row img{ /*gives borders around the app images */
+footer .install .row img{ /* gives borders around the app images */
   border: 1px solid black;
   border-radius: 6px;
 }
-footer .install img{ /*gives space in the install app column*/
+footer .install img{ /* gives space in the install app column */
   margin: 10px 0 15px 0;
 }
-footer .col a:hover{ /*when hovering over footer links, it would change it to lightblue*/
+footer .col a:hover{ /* when hovering over footer links, it would change it to lightblue */
   color: #6F8FAF;
 }
 footer .copyright {
   width: 100%;
   text-align: center;
 }
-/*-----------------------------------------*/
-/*Products Page*/
+/* ----------------------------------------- */
+/* Products Page */
 .products{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -397,7 +397,7 @@ footer .copyright {
   border-radius: 5%;
 }
 .product .title{
-  border-bottom: 1px solid black; /*creates a line below the title*/
+  border-bottom: 1px solid black; /* creates a line below the title */
   text-align: center;
   font-weight: 800;
   padding: 30px 0 20px 0;
@@ -414,8 +414,8 @@ footer .copyright {
   top: 15px;
   z-index: 1;
 }
-/*-------------------------------------*/
-/*Contact Page*/
+/* ------------------------------------- */
+/* Contact Page */
 #contact-container{
   position: relative;
   display: flex;
@@ -476,10 +476,10 @@ footer .copyright {
   align-items: center;
   padding-top: 7%;
 }
-/*-------------------------------------*/
-/*MediaQ*/
+/* ------------------------------------- */
+/* MediaQ */
 @media (max-width:820px){
-    #navbar { /*creates a nav bar to go to the side*/
+    #navbar { /* creates a nav bar to go to the side */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -494,7 +494,7 @@ footer .copyright {
         padding: 80px 0 0 10px;
         transition: 0.3s;
     }
-    #navbar li { /*creates space between the links*/
+    #navbar li { /* creates space between the links */
         margin-bottom: 25px;
     }
 
@@ -517,7 +517,7 @@ footer .copyright {
         left: 30px;
         color: black;
         font-size: 24px;
-        display: initial; /*shows the close button when inside a query*/
+        display: initial; /* shows the close button when inside a query */
     }
     #lg-bag {
         display: none;
@@ -526,24 +526,24 @@ footer .copyright {
         height: 70vh;
         padding: 0 80px;
     }
-    .product-card { /*changes the width of each card and its smaller*/
+    .product-card { /* changes the width of each card and its smaller */
         width: 200px;
     }
 }
 @media (max-width: 477px){
-    /*home page*/
-    #navbar { /*changes how much space is in the slider for navbar*/
+    /* home page */
+    #navbar { /* changes how much space is in the slider for navbar */
         width: 200px;
     }
     #header {
-        padding: 10px 30px; /*creates space in the navbar*/
+        padding: 10px 30px; /* creates space in the navbar */
     }
     #hero {
-        padding: 0; /*allows the information in the hero to be centered*/
+        padding: 0; /* allows the information in the hero to be centered */
     }
     #subscribe{
         height: 14vh;
-        justify-content: space-around;/*shifts the subscribe infor in the middle*/
+        justify-content: space-around;/* shifts the subscribe infor in the middle */
     }
     .form{
         width: 60%;
@@ -569,7 +569,7 @@ footer .copyright {
     .product-card{
         margin-right: 10px;
     }
-    /*Contact*/
+    /* Contact */
     .contact-box{
         width: 300px;
     }
