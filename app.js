@@ -54,7 +54,7 @@ http.onload = function(){
                     <p class="price">
                         <span>${item.price}</span>
                     </p>
-                    <p href="#" class="Shop">Add to cart</p>
+                    <p href="#" class="shop">Add to cart</p>
                 </div>
             `;
     }

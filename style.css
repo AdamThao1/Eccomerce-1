@@ -52,13 +52,13 @@
   content: "";
   width: 30%; /* gives the line the width */
   background: black;
-  height: 2px; 
+  height: 2px;
   bottom: -4px; /* moves the underline below the link */
   left: 20px; /* moves the underline left to right deoending on px */
   position: absolute;
 }
 
-#mobile{ /* this is for the responsive icons to disappear */
+#mobile { /* this is for the responsive icons to disappear */
   display: none;
   align-items: center;
 }
@@ -68,13 +68,12 @@
 }
 
 .logo {
-width: 10vh;
-height: 10vh;
-border: 3px solid black;
-padding: 1vh;
-border-radius: 50%;
+  width: 10vh;
+  height: 10vh;
+  border: 3px solid black;
+  padding: 1vh;
+  border-radius: 50%;
 }
-
 
 /* home Page */
 #hero {
@@ -88,18 +87,18 @@ border-radius: 50%;
   align-items: center; /* changes the length of the words */
 }
 
-#hero h2{
-  padding: 50px 0 10px 0;
+#hero h2 {
+  padding: 50px 0 10px;
 }
-#hero h1{
-  padding: 0 0 10px 0;
+#hero h1 {
+  padding: 0 0 10px;
 }
-#hero p{
-  padding: 0 0 10px 0;
+#hero p {
+  padding: 0 0 10px;
 }
 
 /* button on home page */
-.Shop {
+.shop {
   margin: 10px;
   padding: 15px 30px; /* changes the size of button */
   text-align: center;
@@ -118,12 +117,12 @@ border-radius: 50%;
   -webkit-user-select: none;
   touch-action: manipulation; /* Enables zoom interactions */
 }
-.Shop:hover{
+.shop:hover {
   background-position: right center;/* changes the direction */
   color: #fff;
   text-decoration: none;
 }
-.Shop:active{
+.shop:active {
   transform: scale(0.95); /* changes the size when clicked */
 }
 
