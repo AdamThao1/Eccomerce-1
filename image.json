@@ -2,73 +2,73 @@
   {
     "image": "products/1-Bannana.webp",
     "title": "A Pack of Bananas",
-    "description": "text",
+    "description": "Best bananas of the Century",
     "price": "$5.00"
   },
   {
     "image": "products/barrel-banana.webp",
     "title": "A Barrel of Bananas",
-    "description": "text",
+    "description": "About 50 packs of bananas",
     "price": "$100"
   },
   {
     "image": "products/Crate-of.jpeg",
     "title": "A Crate of Bananas",
-    "description": "text",
+    "description": "256 packs of bananas",
     "price": "$1000"
   },
   {
     "image": "products/Goggles.jpeg",
     "title": "Pair of Goggles",
-    "description": "text",
+    "description": "Goggles gives enhanced sight",
     "price": "$25"
   },
   {
     "image": "products/Blue-suit.jpeg",
     "title": "Blue Suit",
-    "description": "text",
+    "description": "Best suit with many pockets",
     "price": "$54"
   },
   {
     "image": "products/Fart-Gun.webp",
     "title": "Fart Gun",
-    "description": "text",
+    "description": "Sprays a big amount of fart",
     "price": "$10,000"
   },
   {
     "image": "products/shrink-ray.webp",
     "title": "Shrink Ray",
-    "description": "text",
+    "description": "Shrinks anything",
     "price": "$500,000"
   },
   {
     "image": "products/Freeze-ray.webp",
     "title": "Freeze Ray",
-    "description": "text",
+    "description": "Generates instant ice",
     "price": "$100,000"
   },
   {
     "image": "products/taser.webp",
     "title": "Lipstick Taser",
-    "description": "text",
+    "description": "Very dangerous weapon",
     "price": "$45,000"
   },
   {
     "image": "products/PX41-serum.webp",
     "title": "PX-41 Serum",
-    "description": "text",
+    "description": "Makes you turn purple and angry",
     "price": "$75,000"
   },
   {
     "image": "products/Px49-antidote.webp",
     "title": "PX-49 Antidote",
-    "description": "text",
+    "description": "Antidote for the PX-41 Serum",
     "price": "$175,000"
   },
   {
     "image": "products/Fluffy.webp",
     "title": "Fluffy Unicorn",
-    "description": "text",
+    "description": "Its so fluffy",
     "price": "$30,000"
   }
 ]
