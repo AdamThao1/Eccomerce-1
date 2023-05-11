@@ -275,6 +275,13 @@
   transform: scaleX(-1);
 }
 
+.products img { /* products images is right here bc linting */
+  width: 100%;
+  height: 250px;
+  display: block;
+  border-radius: 5%;
+}
+
 .pre-btn img,
 .nxt-btn img { /* changes the color and size of button images */
   opacity: 0.4;
@@ -414,23 +421,16 @@ footer .copyright {
   background-color: #6F8FAF;
 }
 
-.products img {
-  width: 100%;
-  height: 250px;
-  display: block;
-  border-radius: 5%;
-}
-
 .product .title {
   border-bottom: 1px solid black; /* creates a line below the title */
   text-align: center;
   font-weight: 800;
-  padding: 30px 0 20px 0;
+  padding: 30px 0 20px;
 }
 
 .product .description {
   text-align: center;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px;
 }
 
 .product .price {
@@ -442,7 +442,9 @@ footer .copyright {
   top: 15px;
   z-index: 1;
 }
+
 /* ------------------------------------- */
+
 /* Contact Page */
 #contact-container {
   position: relative;
@@ -460,7 +462,7 @@ footer .copyright {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(images/backgrounds/Minions-Despicable-Me-Cute-Yellow-Art-Illustration-ipad-air.jpg);
+  background: url("images/backgrounds/Minions-Despicable-Me-Cute-Yellow-Art-Illustration-ipad-air.jpg");
   background-size: cover;
   z-index: -1;
   filter: blur(3px);
@@ -510,9 +512,11 @@ footer .copyright {
   align-items: center;
   padding-top: 7%;
 }
+
 /* ------------------------------------- */
+
 /* MediaQ */
-@media (max-width:820px) {
+@media (max-width: 820px) {
   #navbar { /* creates a nav bar to go to the side */
     display: flex;
     flex-direction: column;
@@ -520,33 +524,33 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-  right: -300px;
+    right: -300px;
     height: 100vh;
     width: 300px;
     background-color: white;
     box-shadow: 0 10px 10px grey;
     padding: 80px 0 0 10px;
     transition: 0.3s;
-    }
+  }
 
   #navbar li { /* creates space between the links */
     margin-bottom: 25px;
-    }
+  }
 
   #navbar.active {
     right: 0px;
-    }
+  }
 
   #mobile {
     display: flex;
     align-items: center;
-    }
+  }
 
   #mobile i {
     color: #1a1a1a;
     font-size: 24px;
     padding-left: 20px;
-    }
+  }
 
   #close {
     position: absolute;
@@ -555,74 +559,74 @@ footer .copyright {
     color: black;
     font-size: 24px;
     display: initial; /* shows the close button when inside a query */
-    }
+  }
 
   #lg-bag {
     display: none;
-    }
+  }
 
   #hero {
     height: 70vh;
     padding: 0 80px;
-    }
+  }
 
   .product-card { /* changes the width of each card and its smaller */
     width: 200px;
-    }
+  }
 }
 
 @media (max-width: 477px) {
     /* home page */
   #navbar { /* changes how much space is in the slider for navbar */
     width: 200px;
-    }
+  }
 
   #header {
     padding: 10px 30px; /* creates space in the navbar */
-    }
+  }
 
   #hero {
     padding: 0; /* allows the information in the hero to be centered */
-    }
+  }
 
   #subscribe {
     height: 14vh;
     justify-content: space-around;/* shifts the subscribe infor in the middle */
-    }
+  }
 
   .form {
     width: 60%;
-    }
+  }
 
   #subscribe input {
     width: 12rem;
-    }
+  }
 
-    /*slider*/
+    /* slider */
   .product-category {
     padding: 0 16vw;
-    }
+  }
 
   .pre-btn,
   .nxt-btn {
     width: 70px;
-    }
+  }
 
   .pre-btn img,
   .nxt-btn img {
     width: 70px;
-    }
+  }
 
   .product-container {
     padding: 0 14vw;
-    }
+  }
 
   .product-card {
     margin-right: 10px;
-    }
+  }
 
-    /* Contact */
+  /* Contact */
   .contact-box {
     width: 300px;
-    }
-}
+  }
+};
