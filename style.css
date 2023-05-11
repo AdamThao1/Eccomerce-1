@@ -12,7 +12,8 @@
   justify-content: space-between; /* put the links to the right side */
   padding: 20px 80px;
   background: #ffd55e;
-  box-shadow: 0 5px 10px rgba(128, 128, 128, 0.234);
+  box-shadow: 0 5px 10px rgba(128, 128, 128, 23.4%);
+
   /* next four lines would keep the nav bar on top always */
   z-index: 999;
   position: sticky;
@@ -25,11 +26,13 @@
   align-items: center;
   justify-content: center;
 }
+
 #navbar li {
   list-style: none; /* removes the dots for the list */
   padding: 0 20px;
   position: relative;
 }
+
 #navbar li a {
   text-decoration: none; /* removes the underline */
   font-size: 16px;
@@ -37,6 +40,7 @@
   color: gray; /* change the color of links to black */
   transition: 0.3s ease; /* when hovering the links, a short transition ahppens */
 }
+
 #navbar li a:hover,
 #navbar li a.active {
   color: black;
@@ -44,7 +48,7 @@
 
 /* the line under the links */
 #navbar li a.active::after,
-#navbar li a:hover::after { /* reating this would give the hover for other links */
+#navbar li a:hover::after {/* reating this would give the hover for other links */
   content: "";
   width: 30%; /* gives the line the width */
   background: black;
