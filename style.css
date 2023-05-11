@@ -90,9 +90,11 @@
 #hero h2 {
   padding: 50px 0 10px;
 }
+
 #hero h1 {
   padding: 0 0 10px;
 }
+
 #hero p {
   padding: 0 0 10px;
 }
@@ -110,32 +112,36 @@
   display: block;
   border: 1px;
   font-weight: 900;
-  box-shadow: 0px 0px 14px -5px #FFD55E;/* creates a shadow around the button */
-  background-image: linear-gradient(45deg, orange 0%, #FFD55E 51%,orange 100%); /* have it to go to 45 degrees and have 3 different colors considering their position */
+  box-shadow: 0px 0px 14px -5px #ffd55e;/* creates a shadow around the button */
+  background-image: linear-gradient(45deg, orange 0%, #ffd55e 51%, orange 100%);
+
+  /* have it to go to 45 degrees and have 3 different colors considering their position */
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation; /* Enables zoom interactions */
 }
+
 .shop:hover {
   background-position: right center;/* changes the direction */
   color: #fff;
   text-decoration: none;
 }
+
 .shop:active {
   transform: scale(0.95); /* changes the size when clicked */
 }
 
 /* slider */
 
-#slider{ /* creates space around the section */
+#slider { /* creates space around the section */
   position: relative;
   overflow: hidden;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(128, 128, 128, 0.417);
 }
 
-.product-category{ /* Best selling */
+.product-category { /* Best selling */
   padding: 0 10vw;
   font-size: 30px;
   font-weight: 500;
@@ -143,7 +149,7 @@
   text-transform: capitalize;
 }
 
-.product-container{ /* the container for the cards */
+.product-container { /* the container for the cards */
   padding: 0 10vw;
   display: flex;
   overflow-x: auto;
@@ -155,20 +161,19 @@
 
 }
 
-.product-card{
+.product-card {
   flex: 0 0 auto; /* gave a flex box to give images their size */
   width: 250px;
   height: 450px;
   margin-right: 40px; /* adds space between cards */
 }
 
-.product-image{
+.product-image {
   position: relative;
   overflow: hidden;
   height: 350px;
   width: 100%;
 }
-
 
 .product-pic{ /* this is the picture inside the card */
   width: 100%;
@@ -176,7 +181,6 @@
   object-fit: contain;
   border: 1px solid black;
 }
-
 
 .discount-tag{
   position: absolute;
@@ -221,6 +225,7 @@
   padding-left: 15px;/* gives space to the left, which shifts the texts to the right */
   border: 1px solid black;
 }
+
 .product-brand { /* the title of each character */
   text-transform: uppercase;
 }
@@ -235,21 +240,19 @@
   margin: 5px 0;
 }
 
-.price{ /* the price after the discount */
+.price { /* the price after the discount */
   font-weight: 900;
   font-size: 20px;
 }
 
-.ac  ual-price{ /* the actual price for the character */
+.actual-price { /* the actual price for the character */
   margin-left: 20px;
   opacity: 0.5;
   text-decoration: line-through; /* gives the line through the text */
 }
 
-
-
 .nxt-btn,
-.pre-btn{
+.pre-btn {
   border: none;
   width: 11vw;
   height: 100%;
@@ -263,23 +266,24 @@
   z-index: 9;
 }
 
-.pre-btn{
+.pre-btn {
   left: 0;
 }
-.nxt-btn{
+
+.nxt-btn {
   right: 0;
   transform: scaleX(-1);
 }
 
 .pre-btn img,
-.nxt-btn img{ /* changes the color and size of button images */
+.nxt-btn img { /* changes the color and size of button images */
   opacity: 0.4;
   height: 100px;
   width: 100px;
 }
 
 .pre-btn:hover img,
-.nxt-btn:hover img{ /* when hovering the button, the button appears with color and has a transition */
+.nxt-btn:hover img { /* when hovering the button, the button appears with color and has a transition */
   opacity: 1;
   transition: 0.4s;
 }
@@ -295,15 +299,18 @@
   height: 13vw;
   box-shadow: 0 5px 5px rgba(128, 128, 128, 0.234);
 }
-.subtext{
+
+.subtext {
   margin-left: 5vw;
 }
+
 .subtext h4 {
   font-size: 22px;
   font-weight: 700;
   color: black;
 }
-#subscribe input{
+
+#subscribe input {
   height: 2rem;
   padding: 0 1.25em;
   font-size: 14px;
@@ -311,7 +318,8 @@
   border-radius: 4px;
   outline: none;
 }
-.signup{
+
+.signup {
   height: 2rem;
   padding: 0 1.50em;
   border-radius: 4px;
@@ -319,7 +327,8 @@
   color: white;
   white-space: nowrap; /* makes "sign up" into one line */
 }
-.form{
+
+.form {
   display: flex;
   width: 40%;
   margin-right: 4vw;
@@ -334,92 +343,108 @@ footer { /* gives the footer flexbox and space-between */
   background-color: #FFD55E;
   padding: 10px;
 }
+
 footer .col { /* the column in the footer */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 30px;
 }
+
 footer h4 { /* changing the titles of each footer titles */
   font-size: 20px;
   padding-bottom: 20px;
 }
+
 footer p { /* gives space between each information */
   font-size: 16px;
   margin: 0 0 8px 0;
 }
+
 footer a { /* gives space and changes the links */
   font-size: 16px;
   text-decoration: none;
   color: black;
   margin-bottom: 10px; /* gives space between each link */
 }
-footer .follow{ /* gives space above to seperate from the contact */
+
+footer .follow { /* gives space above to seperate from the contact */
   margin-top: 20px;
 }
-footer .follow a{ /* social media links */
+
+footer .follow a { /* social media links */
   color: grey;
   padding-right: 8px; /* gives space between each links */
   cursor: pointer;
   font-size: 22px;
 }
-footer .install .row img{ /* gives borders around the app images */
+
+footer .install .row img { /* gives borders around the app images */
   border: 1px solid black;
   border-radius: 6px;
 }
-footer .install img{ /* gives space in the install app column */
+
+footer .install img { /* gives space in the install app column */
   margin: 10px 0 15px 0;
 }
-footer .col a:hover{ /* when hovering over footer links, it would change it to lightblue */
+
+footer .col a:hover { /* when hovering over footer links, it would change it to lightblue */
   color: #6F8FAF;
 }
+
 footer .copyright {
   width: 100%;
   text-align: center;
 }
 /* ----------------------------------------- */
 /* Products Page */
-.products{
+.products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   grid-gap: 50px;
   margin: 50px auto;
   padding: 20px;
 }
-.product{
+
+.product {
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.352);
   background-color: #6F8FAF;
 }
-.products img{
+
+.products img {
   width: 100%;
   height: 250px;
   display: block;
   border-radius: 5%;
 }
-.product .title{
+
+.product .title {
   border-bottom: 1px solid black; /* creates a line below the title */
   text-align: center;
   font-weight: 800;
   padding: 30px 0 20px 0;
 }
-.product .description{
+
+.product .description {
   text-align: center;
   padding: 0 20px 20px 20px;
 }
-.product .price{
+
+.product .price {
   text-align: center;
 }
-.products h4{
+
+.products h4 {
   background-color: red;
   top: 15px;
   z-index: 1;
 }
 /* ------------------------------------- */
 /* Contact Page */
-#contact-container{
+#contact-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -427,7 +452,8 @@ footer .copyright {
   height: 100%;
   padding: 20px 100px;
 }
-#contact-container::after{
+
+#contact-container::after {
   content: '';
   position: absolute;
   left: 0;
@@ -440,20 +466,22 @@ footer .copyright {
   filter: blur(3px);
 }
 
-.contact-box{
+.contact-box {
   width: 500px;
   background-color: white;
   position: relative;
   border-radius: 15px;
   box-shadow: 0 0 20px 0 white;
 }
-.contact-box form{
+
+.contact-box form {
   margin: 35px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
-.input-field{
+
+.input-field {
   width: 400px;
   height: 40px;
   margin-top: 20px;
@@ -462,18 +490,21 @@ footer .copyright {
   border-radius: 15px;
   outline: none;
 }
-.textarea-field{
+
+.textarea-field {
   height: 150px;
   padding-top: 10px;
 }
-.contact-button{
+
+.contact-button {
   border-radius: 20px;
   padding: 10px;
   margin-top: 18px;
   background-color: red;
   cursor: pointer;
 }
-.contact-box h4{
+
+.contact-box h4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,7 +520,7 @@ footer .copyright {
     justify-content: flex-start;
     position: fixed;
     top: 0;
-    right: -300px;
+  right: -300px;
     height: 100vh;
     width: 300px;
     background-color: white;
@@ -497,23 +528,26 @@ footer .copyright {
     padding: 80px 0 0 10px;
     transition: 0.3s;
     }
+
   #navbar li { /* creates space between the links */
     margin-bottom: 25px;
     }
 
-  #navbar.active{
+  #navbar.active {
     right: 0px;
     }
 
-  #mobile{
+  #mobile {
     display: flex;
     align-items: center;
     }
-  #mobile i{
+
+  #mobile i {
     color: #1a1a1a;
     font-size: 24px;
     padding-left: 20px;
     }
+
   #close {
     position: absolute;
     top: 30px;
@@ -522,58 +556,73 @@ footer .copyright {
     font-size: 24px;
     display: initial; /* shows the close button when inside a query */
     }
+
   #lg-bag {
     display: none;
     }
+
   #hero {
     height: 70vh;
     padding: 0 80px;
     }
+
   .product-card { /* changes the width of each card and its smaller */
     width: 200px;
     }
 }
-@media (max-width: 477px){
+
+@media (max-width: 477px) {
     /* home page */
   #navbar { /* changes how much space is in the slider for navbar */
     width: 200px;
     }
+
   #header {
     padding: 10px 30px; /* creates space in the navbar */
     }
+
   #hero {
     padding: 0; /* allows the information in the hero to be centered */
     }
-  #subscribe{
+
+  #subscribe {
     height: 14vh;
     justify-content: space-around;/* shifts the subscribe infor in the middle */
     }
-  .form{
+
+  .form {
     width: 60%;
     }
+
   #subscribe input {
     width: 12rem;
     }
+
     /*slider*/
-  .product-category{
+  .product-category {
     padding: 0 16vw;
     }
+
   .pre-btn,
-  .nxt-btn{
+  .nxt-btn {
     width: 70px;
     }
+
   .pre-btn img,
-  .nxt-btn img{
+  .nxt-btn img {
     width: 70px;
     }
-  .product-container{
+
+  .product-container {
     padding: 0 14vw;
     }
-  .product-card{
+
+  .product-card {
     margin-right: 10px;
     }
+
     /* Contact */
-  .contact-box{
+  .contact-box {
     width: 300px;
     }
 }
