@@ -5,6 +5,26 @@
   font-family: sans-serif;
 }
 
+.products img { /* products images is right here bc linting */
+  width: 100%;
+  height: 250px;
+  display: block;
+  border-radius: 5%;
+}
+
+.pre-btn img, /* put the button images before the footer images because of litton */
+.nxt-btn img { /* changes the color and size of button images */
+  opacity: 0.4;
+  height: 100px;
+  width: 100px;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img { /* when hovering the button, the button appears with color and has a transition */
+  opacity: 1;
+  transition: 0.4s;
+}
+
 /* footer */
 
 footer { /* gives the footer flexbox and space-between */
@@ -238,19 +258,19 @@ footer .copyright {
   width: 100%;
 }
 
-.product-pic{ /* this is the picture inside the card */
+.product-pic { /* this is the picture inside the card */
   width: 100%;
   height: 100%;
   object-fit: contain;
   border: 1px solid black;
 }
 
-.discount-tag{
+.discount-tag {
   position: absolute;
   background: black;
   padding: 5px;
   border-radius: 5px;
-  color: #FFD55E;
+  color: #ffd55e;
   right: 1px;
   text-transform: capitalize;
 }
@@ -272,13 +292,13 @@ footer .copyright {
   opacity: 0;
 }
 
-.product-card:hover .card-btn {
-  opacity: 1; /* when hovering the card, the button "add to wishlist" appears */
-}
-
 .card-btn:hover { /* when hovering over the button, it changes color */
   background: black;
-  color: #FFD55E;
+  color: #ffd55e;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1; /* when hovering the card, the button "add to wishlist" appears */
 }
 
 .product-info { /* the name, description, and price adjustments */
@@ -338,26 +358,6 @@ footer .copyright {
   transform: scaleX(-1);
 }
 
-.products img { /* products images is right here bc linting */
-  width: 100%;
-  height: 250px;
-  display: block;
-  border-radius: 5%;
-}
-
-.pre-btn img,
-.nxt-btn img { /* changes the color and size of button images */
-  opacity: 0.4;
-  height: 100px;
-  width: 100px;
-}
-
-.pre-btn:hover img,
-.nxt-btn:hover img { /* when hovering the button, the button appears with color and has a transition */
-  opacity: 1;
-  transition: 0.4s;
-}
-
 /* Subscribe */
 
 #subscribe {
@@ -367,7 +367,7 @@ footer .copyright {
   align-items: center;
   background-image: url("images/backgrounds/banna.jpeg");
   height: 13vw;
-  box-shadow: 0 5px 5px rgba(128, 128, 128, 0.234);
+  box-shadow: 0 5px 5px rgba(128, 128, 128, 23.4%);
 }
 
 .subtext {
@@ -391,9 +391,9 @@ footer .copyright {
 
 .signup {
   height: 2rem;
-  padding: 0 1.50em;
+  padding: 0 1.5em;
   border-radius: 4px;
-  background-color: #6F8FAF;
+  background-color: #6f8faf;
   color: white;
   white-space: nowrap; /* makes "sign up" into one line */
 }
