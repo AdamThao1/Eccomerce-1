@@ -96,7 +96,7 @@ footer .copyright {
   justify-content: space-between; /* put the links to the right side */
   padding: 20px 80px;
   background: #ffd55e;
-  box-shadow: 0 5px 10px rgba(128, 128, 128, 23.4%);
+  box-shadow: 0 5px 10px rgba(128 128 128 / 23.4%);
 
   /* next four lines would keep the nav bar on top always */
   z-index: 999;
@@ -202,7 +202,6 @@ footer .copyright {
   /* have it to go to 45 degrees and have 3 different colors considering their position */
   cursor: pointer;
   user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation; /* Enables zoom interactions */
 }
 
@@ -222,7 +221,7 @@ footer .copyright {
   position: relative;
   overflow: hidden;
   padding: 20px;
-  box-shadow: 0 5px 15px rgba(128, 128, 128, 41.7%);
+  box-shadow: 0 5px 15px rgba(128 128 128 / 41.7%);
 }
 
 .product-category { /* Best selling */
@@ -367,7 +366,7 @@ footer .copyright {
   align-items: center;
   background-image: url("images/backgrounds/banna.jpeg");
   height: 13vw;
-  box-shadow: 0 5px 5px rgba(128, 128, 128, 23.4%);
+  box-shadow: 0 5px 5px rgba(128 128 128 / 23.4%);
 }
 
 .subtext {
@@ -419,7 +418,7 @@ footer .copyright {
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 35.2%);
+  box-shadow: 0 5px 5px rgba(0 0 0 / 35.2%);
   background-color: #6f8faf;
 }
 
