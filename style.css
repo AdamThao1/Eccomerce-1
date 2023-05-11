@@ -5,6 +5,69 @@
   font-family: sans-serif;
 }
 
+/* footer */
+
+footer { /* gives the footer flexbox and space-between */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffd55e;
+    padding: 10px;
+  }
+  
+  footer .col { /* the column in the footer */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  footer h4 { /* changing the titles of each footer titles */
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  
+  footer p { /* gives space between each information */
+    font-size: 16px;
+    margin: 0 0 8px;
+  }
+  
+  footer a { /* gives space and changes the links */
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px; /* gives space between each link */
+  }
+  
+  footer .follow { /* gives space above to seperate from the contact */
+    margin-top: 20px;
+  }
+  
+  footer .follow a { /* social media links */
+    color: grey;
+    padding-right: 8px; /* gives space between each links */
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  footer .install .row img { /* gives borders around the app images */
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+  
+  footer .install img { /* gives space in the install app column */
+    margin: 10px 0 15px;
+  }
+  
+  footer .col a:hover { /* when hovering over footer links, it would change it to lightblue */
+    color: #6f8faf;
+  }
+  
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+  }
+
 /* header start */
 #header {
   display: flex; /* changes the links */
@@ -341,69 +404,8 @@
   margin-right: 4vw;
 }
 
-/* footer */
-
-footer { /* gives the footer flexbox and space-between */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #FFD55E;
-  padding: 10px;
-}
-
-footer .col { /* the column in the footer */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 30px;
-}
-
-footer h4 { /* changing the titles of each footer titles */
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
-footer p { /* gives space between each information */
-  font-size: 16px;
-  margin: 0 0 8px 0;
-}
-
-footer a { /* gives space and changes the links */
-  font-size: 16px;
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px; /* gives space between each link */
-}
-
-footer .follow { /* gives space above to seperate from the contact */
-  margin-top: 20px;
-}
-
-footer .follow a { /* social media links */
-  color: grey;
-  padding-right: 8px; /* gives space between each links */
-  cursor: pointer;
-  font-size: 22px;
-}
-
-footer .install .row img { /* gives borders around the app images */
-  border: 1px solid black;
-  border-radius: 6px;
-}
-
-footer .install img { /* gives space in the install app column */
-  margin: 10px 0 15px 0;
-}
-
-footer .col a:hover { /* when hovering over footer links, it would change it to lightblue */
-  color: #6F8FAF;
-}
-
-footer .copyright {
-  width: 100%;
-  text-align: center;
-}
 /* ----------------------------------------- */
+
 /* Products Page */
 .products {
   display: grid;
@@ -417,8 +419,8 @@ footer .copyright {
   padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.352);
-  background-color: #6F8FAF;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 35.2%);
+  background-color: #6f8faf;
 }
 
 .product .title {
@@ -456,7 +458,7 @@ footer .copyright {
 }
 
 #contact-container::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -538,7 +540,7 @@ footer .copyright {
   }
 
   #navbar.active {
-    right: 0px;
+    right: 2px;
   }
 
   #mobile {
@@ -576,7 +578,7 @@ footer .copyright {
 }
 
 @media (max-width: 477px) {
-    /* home page */
+  /* home page */
   #navbar { /* changes how much space is in the slider for navbar */
     width: 200px;
   }
@@ -602,7 +604,7 @@ footer .copyright {
     width: 12rem;
   }
 
-    /* slider */
+  /* slider */
   .product-category {
     padding: 0 16vw;
   }
@@ -629,4 +631,4 @@ footer .copyright {
   .contact-box {
     width: 300px;
   }
-};
+}
