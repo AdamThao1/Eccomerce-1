@@ -18,16 +18,16 @@ productContainers.forEach(function(item, i) { //loops through each product conta
 });
 
 //responsives to home page
-const bar = document.getElementById('bar');
+const bar = document.getElementById('bar'); //get 3 constants that gets the html file with ID's
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
 
-if(bar) {
+if(bar) { //if bar is click then it would add the slider
   bar.addEventListener('click', () => {
     nav.classList.add('active');
   })
-}
-if(close) {
+} //this can only look visualized with css
+if(close) { //if close is clicked then it would remove the slider
   close.addEventListener('click', () => {
     nav.classList.remove('active');
   })
@@ -35,15 +35,15 @@ if(close) {
 
 //adding JSON
 
-const http = new XMLHttpRequest();
+const http = new XMLHttpRequest(); //this would created a new instance of the XMLHttpRequest
 
-http.open('get', 'image.json', true);
+http.open('get', 'image.json', true); //this would send a GET request to retireve the JSON data
 
-http.send();
+http.send(); 
 
-http.onload = function(){
-  if(this.readyState == 4 && this.status == 200){
-    const products = JSON.parse(this.responseText);
+http.onload = function(){ //sets a Callback function when response is complete
+  if(this.readyState == 4 && this.status == 200){ //onload gets called when state is 4 and status is 200
+    const products = JSON.parse(this.responseText); //then JSON data is parsed into the javascript objects
     let output = "";
     for(const item of products){
       output += `
@@ -58,6 +58,6 @@ http.onload = function(){
                 </div>
             `;
     }
-    document.querySelector(".products").innerHTML = output;
-  }
-}
+    document.querySelector(".products").innerHTML = output; //this would display html in javascript
+  } //it grabs the class ".products" and output it in there
+} //this code creates html elements that gets the JSON file then displays on page.
